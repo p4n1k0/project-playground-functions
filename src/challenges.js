@@ -72,8 +72,20 @@ console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let mensagem = "";
+  let distanciaCat1 = Math.abs(cat1 - mouse);
+  let distanciaCat2 = Math.abs(cat2 - mouse);
+
+  if(distanciaCat1 < distanciaCat2){
+    mensagem = "cat1";
+  }else if(distanciaCat2 < distanciaCat1){
+    mensagem = "cat2";
+  }else{
+    mensagem = "os gatos trombam e o rato foge"
+  }
+  return mensagem;
 }
 
 // Desafio 8
