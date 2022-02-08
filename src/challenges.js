@@ -28,9 +28,17 @@ console.log(splitSentence("go Trybe"));
 
 
 // Desafio 4
-function concatName() {
+function concatName(nomes) {
   // seu código aqui
+  let primeiro = nomes[0];
+  let ultimo = nomes[nomes.length - 1];
+  nomes = ultimo + ", " + primeiro;
+  return nomes;
+  
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
