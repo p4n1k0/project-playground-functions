@@ -55,7 +55,7 @@ console.log(footballPoints(0, 0));
 function highestCount(numeros) {
   // ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max#retornando_o_maior_elemento_de_um_array
   // seu código aqui
-  let maiorValor = Math.max.apply(Math, numeros);
+  let maiorValor = Math.max.apply(Math, numeros); // acha maior valor dentro da array
   let contador = 0;
 
   for(let i = 0; i < numeros.length; i += 1){
@@ -75,6 +75,7 @@ console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  // ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
   let mensagem = "";
   let distanciaCat1 = Math.abs(cat1 - mouse);
   let distanciaCat2 = Math.abs(cat2 - mouse);
