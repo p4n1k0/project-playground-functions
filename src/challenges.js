@@ -53,6 +53,7 @@ console.log(footballPoints(0, 0));
 // Desafio 6
 
 function highestCount(numeros) {
+  ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max#retornando_o_maior_elemento_de_um_array
   // seu código aqui
   let maiorValor = Math.max.apply(Math, numeros);
   let contador = 0;
