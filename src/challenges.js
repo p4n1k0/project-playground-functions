@@ -144,8 +144,22 @@ function decode(mensagem0) {
  console.log(decode('h3 th2r2'));
 
 // Desafio 10
-function techList() {
+function techList(tecnologias, name) {
   // seu código aqui
+  // referência e ajuda de Carlos Dal Soler | Turma 16 | https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+  tecnologias.sort()
+  let objeto = [];
+  for (let i = 0; i < tecnologias.length; i += 1){
+    objeto.push ({
+      tech: tecnologias[i],
+      name: name,
+    })
+  }
+  if(tecnologias.length === 0){
+  objeto = 'Vazio!'
+  }
+  return objeto;
+
 }
 
 module.exports = {
