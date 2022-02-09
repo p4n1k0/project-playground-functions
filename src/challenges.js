@@ -21,6 +21,7 @@ console.log(calcArea(51, 1));
 // Desafio 3
 function splitSentence(frase) {
   // seu código aqui
+  // ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
   let resultado = frase.split(" ");
   return resultado;
 }
