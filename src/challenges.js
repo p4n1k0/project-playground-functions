@@ -101,7 +101,7 @@ function fizzBuzz(numeros) {
     }else if(numeros[i] % 3 === 0 && numeros[i] % 5 === 0){
       array.push("fizzBuzz");
     }else{
-      array.push("bug!")
+      array.push("bug!");
     }     
   }
   return array;
@@ -112,12 +112,34 @@ console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+// seu código aqui
+// ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+function encode(mensagem0) {
+  let mensagem1 = mensagem0.replace(/[a]/g, '1');
+  let mensagem2 = mensagem1.replace(/[e]/g, '2');
+  let mensagem3 = mensagem2.replace(/[i]/g, '3');
+  let mensagem4 = mensagem3.replace(/[o]/g, '4');
+  let mensagem5 = mensagem4.replace(/[u]/g, '5');
+
+
+  return mensagem5;
 }
-function decode() {
-  // seu código aqui
-}
+
+console.log(encode("hi there"));
+
+function decode(mensagem0) {
+  // seu código aqui 
+  // ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+  let mensagem1 = mensagem0.replace(/[1]/g, 'a');
+  let mensagem2 = mensagem1.replace(/[2]/g, 'e');
+  let mensagem3 = mensagem2.replace(/[3]/g, 'i');
+  let mensagem4 = mensagem3.replace(/[4]/g, 'o');
+  let mensagem5 = mensagem4.replace(/[5]/g, 'u');
+
+  return mensagem5;
+ }
+
+ console.log(decode('h3 th2r2'));
 
 // Desafio 10
 function techList() {
