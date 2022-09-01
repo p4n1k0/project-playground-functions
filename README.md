@@ -16,9 +16,6 @@
     - [9 - Crie uma função que Codifique e Decodifique](#9---crie-uma-função-que-codifique-e-decodifique)
     - [10 - Crie uma função de Lista de tecnologias](#10---crie-uma-função-de-lista-de-tecnologias)
 
-    `Requisitos bônus:`
-    - [11 - Crie uma função de Número de telefone](#11---crie-uma-função-de-número-de-telefone)
-
 # Habilidades
 
 - Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
