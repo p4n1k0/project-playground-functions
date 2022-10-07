@@ -1,7 +1,7 @@
     `Requisitos do projeto:`
     - [1 - Função usando o operador &&]
     - [2 - Função que calcula a área de um triângulo]
-    - [3 - Função que divida a frase]
+    - [3 - Função que divide a frase]
     - [4 - Função que usa concatenação de strings]
     - [5 - Função que calcula a quantidade de pontos no futebol]
     - [6 - Função que calcula a repetição do maior número]
