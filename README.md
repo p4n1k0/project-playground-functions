@@ -1,13 +1,13 @@
 # Sumário
 
 - [Habilidades](#habilidades)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+  - [O que foi dsenvolvido](#o-que-foi-ser-desenvolvido)
 - [Requisitos do projeto](#requisitos-do-projeto)
 
-    `Requisitos obrigatórios:`
-    - [1 - Crie uma função usando o operador &&](#1---crie-uma-função-usando-o-operador-)
-    - [2 - Crie uma função que calcule a área de um triângulo](#2---crie-uma-função-que-calcule-a-área-de-um-triângulo)
-    - [3 - Crie uma função que divida a frase](#3---crie-uma-função-que-divida-a-frase)
+    `Requisitos do projeto:`
+    - [1 - Função usando o operador &&](#1---crie-uma-função-usando-o-operador-)
+    - [2 - Função que calcula a área de um triângulo](#2---crie-uma-função-que-calcule-a-área-de-um-triângulo)
+    - [3 - Função que divida a frase](#3---crie-uma-função-que-divida-a-frase)
     - [4 - Crie uma função que use concatenação de strings](#4---crie-uma-função-que-use-concatenação-de-strings)
     - [5 - Crie uma função que calcule a quantidade de pontos no futebol](#5---crie-uma-função-que-calcule-a-quantidade-de-pontos-no-futebol)
     - [6 - Crie uma função que calcule a repetição do maior número](#6---crie-uma-função-que-calcule-a-repetição-do-maior-número)
@@ -18,16 +18,16 @@
 
 # Habilidades
 
-- Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
-- Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no seu código;
-- Criar códigos que usam estruturas condicionais, como o if/else ;
-- Manipular arrays (listas);
-- Utilizar o comando for ;
-- Quebrar grandes problemas em pequenos;
-- Utilizar a lógica de programação na resolução de problemas;
-- Manipular objetos;
-- Utilizar o comando for/in ;
-- Utilizar funções para organizar e estruturar o seu código;
+- Escrita de códigos em JavaScript que usam variáveis e tipos primitivos;
+- Utilização de conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no meu código;
+- Criação de códigos que usam estruturas condicionais, como o if/else;
+- Manipulação de arrays (listas);
+- Utilização do comando for ;
+- Quebra grandes problemas em pequenos;
+- Utilização da lógica de programação na resolução de problemas;
+- Manipulação de objetos;
+- Utilização do comando for/in ;
+- Utilização de funções para organizar e estruturar o meu código;
 
 ## O que foi desenvolvido
 
