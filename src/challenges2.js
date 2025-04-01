@@ -42,8 +42,18 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let numeros = string.replace(/[^0-9]/g, ''); //esse trecho foi inspirado nesse site: https://www.horadecodar.com.br/2020/10/14/como-obter-apenas-os-numeros-de-uma-string-em-javascript/
+  let soma = 0;
+  let vetor = [];
+  for (i = 0; i < numeros.length; i += 1) {
+    vetor[i] = numeros[i];
+  }
+  for (i = 0; i < vetor.length; i += 1) {
+    soma = soma + parseInt(vetor[i]);
+  }
+  if (soma === 1) return soma + " copo de água";
+  else return soma + " copos de água";
 }
 
 module.exports = {
