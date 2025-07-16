@@ -1,6 +1,7 @@
 const {
     compareTrue,
     calcArea,
+    splitSentence,
 } = require('../src/challenges');
 
 describe('1 - Crie uma função usando operador &&', () => {
@@ -30,4 +31,18 @@ describe('2 - Crie uma função que calcule a área do triângulo', () => {
     it('Retorne o valor 25.5 quando a função calcArea é chamada como parâmetro base com o valor 51 e o parâmetro height com o valor 1', () => {
         expect(calcArea(51, 1)).toBe(25.5);
     });
-})
+});
+
+describe('3 - Crie uma função que divida a frase', () => {
+    it('Retorne o valor [\'go\', \'Tarick\'] se a função receber a string \'go Tarick\'', () => {
+        expect(splitSentence('go Tarick')).toEqual(['go', 'Tarick']);
+    });
+
+    it('Retorne o valor [\'vamo\', \'que\', \'vamo\']. se a função receber a string \'vamo que vamo\'', () => {
+        expect(splitSentence('vamo que vamo')).toEqual(['vamo', 'que', 'vamo']);
+    });
+
+    it('Retorne o valor [\'foguete\'] se a função receber a string \'foguete\'', () => {
+        expect(splitSentence('foguete')).toEqual(['foguete']);
+    });
+});
