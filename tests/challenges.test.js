@@ -4,6 +4,7 @@ const {
     splitSentence,
     concatName,
     footballPoints,
+    highestCount,
 } = require('../src/challenges');
 
 describe('1 - Crie uma função usando operador &&', () => {
@@ -74,5 +75,23 @@ describe('5 - Crie uma função que calcule a quantidade de pontos no futebol', 
 
     it('Retorne 0 pontos quando o time tenha 0 vitórias e 0 empates', () => {
         expect(footballPoints(0, 0)).toBe(0);
+    });
+});
+
+describe('6 - Crie uma função que calcule a repetição do maior número', () => {
+    it('Retorne 2 quando o parâmetro passado na função highestCount seja [1, 9, 2, 3, 9, 5, 7]', () => {
+        expect(highestCount([1, 9, 2, 3, 9, 5, 7])).toBe(2);
+    });
+
+    it('Retorne 1 quando o parâmetro passado na função highestCount seja [0, 4, 4, 4, 9, 2, 1]', () => {
+        expect(highestCount([0, 4, 4, 4, 9, 2, 1])).toBe(1);
+    });
+
+    it('Retorne 1 quando o parâmetro passado na função highestCount seja [-2, -2, -1]', () => {
+        expect(highestCount([-2, -2, -1])).toBe(1);
+    });
+
+    it('Retorne 3 quando o parâmetro passado na função highestcount seja [0, 0, 0]', () => {
+        expect(highestCount([0, 0, 0])).toBe(3);
     });
 });
