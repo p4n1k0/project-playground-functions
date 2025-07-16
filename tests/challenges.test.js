@@ -5,9 +5,10 @@ const {
     concatName,
     footballPoints,
     highestCount,
+    catAndMouse,
 } = require('../src/challenges');
 
-describe('1 - Crie uma função usando operador &&', () => {
+describe('1 - Função usando operador &&', () => {
     it('Retorne false quando chamar a função compareTrue com um parâmetro de valor false e outro de valor true', () => {
         expect(compareTrue(false, true)).toBe(false);
         expect(compareTrue(true, false)).toBe(false);
@@ -22,7 +23,7 @@ describe('1 - Crie uma função usando operador &&', () => {
     });
 });
 
-describe('2 - Crie uma função que calcule a área do triângulo', () => {
+describe('2 - Função que calcule a área do triângulo', () => {
     it('Retorne o valor 250 quando a função calcArea é chamada com o parâmetro base com o valor 10 e o parâmetro height com o valor 50', () => {
         expect(calcArea(10, 50)).toBe(250);
     });
@@ -36,7 +37,7 @@ describe('2 - Crie uma função que calcule a área do triângulo', () => {
     });
 });
 
-describe('3 - Crie uma função que divida a frase', () => {
+describe('3 - Função que divida a frase', () => {
     it('Retorne o valor [\'go\', \'Tarick\'] se a função receber a string \'go Tarick\'', () => {
         expect(splitSentence('go Tarick')).toEqual(['go', 'Tarick']);
     });
@@ -50,7 +51,7 @@ describe('3 - Crie uma função que divida a frase', () => {
     });
 });
 
-describe('4 - Crie uma função que use concatenação de strings', () => {
+describe('4 - Função que use concatenação de strings', () => {
     it('Retorne \'Paolillo, Lucas\' quando o parâmetro passado na funcão concatName seja [\'Lucas\', \'Cassiano\', \'Ferraz\', \'Paolillo\']', () => {
         expect(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'])).toBe('Paolillo, Lucas');
     });
@@ -64,7 +65,7 @@ describe('4 - Crie uma função que use concatenação de strings', () => {
     });
 });
 
-describe('5 - Crie uma função que calcule a quantidade de pontos no futebol', () => {
+describe('5 - Função que calcule a quantidade de pontos no futebol', () => {
     it('Retorne 50 pontos quando o time tenha 14 vitórias e 8 empates', () => {
         expect(footballPoints(14, 8)).toBe(50);
     });
@@ -78,7 +79,7 @@ describe('5 - Crie uma função que calcule a quantidade de pontos no futebol', 
     });
 });
 
-describe('6 - Crie uma função que calcule a repetição do maior número', () => {
+describe('6 - Função que calcule a repetição do maior número', () => {
     it('Retorne 2 quando o parâmetro passado na função highestCount seja [1, 9, 2, 3, 9, 5, 7]', () => {
         expect(highestCount([1, 9, 2, 3, 9, 5, 7])).toBe(2);
     });
@@ -93,5 +94,19 @@ describe('6 - Crie uma função que calcule a repetição do maior número', () 
 
     it('Retorne 3 quando o parâmetro passado na função highestcount seja [0, 0, 0]', () => {
         expect(highestCount([0, 0, 0])).toBe(3);
+    });
+});
+
+describe('7 - Função de caça ao rato', () => {
+    it('Retorne a string \'cat2\' caso a função catAndMouse receba o parâmetros onde gato cat2 esteja a 2 unidades de distância do rato e cat1 esteja a 3 unidades de distância do rato', () => {
+        expect(catAndMouse(0, 3, 2)).toBe('cat2');
+    });
+
+    it('Retorne a string \'cat1\' caso a função catAndMouse receba o parâmetros onde gato cat1 esteja a 6 unidades de distância do rato e cat2 esteja a 12 unidades de distância do rato', () => {
+        expect(catAndMouse(10, 4, 22)).toBe('cat1');
+    });
+
+    it('Retorne a string \'os gatos trombam e o rato foge\' caso a função catAndMouse receba o parâmetros onde gatos estejam na mesma distância do rato', () => {
+        expect(catAndMouse(1, 0, 2)).toBe('os gatos trombam e o rato foge');
     });
 });
