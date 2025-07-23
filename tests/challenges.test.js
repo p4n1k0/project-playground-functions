@@ -9,6 +9,7 @@ const {
     fizzBuzz,
     encode,
     decode,
+    techList,
 } = require('../src/challenges');
 
 describe('1 - Função usando operador &&', () => {
@@ -141,5 +142,36 @@ describe('9 - Funções que codifica e decodifica', () => {
         expect(decode('H4w 1r2 y45 t4d1y?')).toBe('How are you today?');
         expect(decode('Th3s 3s 1n 2nc4d3ng t2st.')).toBe('This is an encoding test.');
         expect(decode('g4 T1r3ck!')).toBe('go Tarick!');
+    });
+});
+
+describe('10 - Crie uma função de Lista de tecnologias', () => {
+    it('Retorne uma lista de objetos ordenados quando é passada uma lista com 5 tecnologias deve', () => {
+        expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+            {
+                tech: 'CSS',
+                name: 'Lucas',
+            },
+            {
+                tech: 'HTML',
+                name: 'Lucas',
+            },
+            {
+                tech: 'JavaScript',
+                name: 'Lucas',
+            },
+            {
+                tech: 'Jest',
+                name: 'Lucas',
+            },
+            {
+                tech: 'React',
+                name: 'Lucas',
+            },
+        ]);
+    });
+
+    it('Retorne a mensagem de erro \'Vazio!\' quando a lista tiver com 0 tecnologias', () => {
+        expect(techList([], 'Lucas')).toBe('Vazio!');
     });
 });
